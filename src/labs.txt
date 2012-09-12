@@ -83,7 +83,7 @@ Execute:
 git init
 =init
 +git config user.name "Jim Weirich"
-+git config user.email "jim (at) edgecase.com"
++git config user.email "jim (at) newcontext.com"
 
 Output:
 =init
@@ -2134,7 +2134,7 @@ ls
 =ls2
 +cd cloned_hello
 +git config user.name "Jim Weirich"
-+git config user.email "jim (at) edgecase.com"
++git config user.email "jim (at) newcontext.com"
 +cd ..
 
 Output:

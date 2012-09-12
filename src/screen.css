@@ -175,14 +175,14 @@ html, body {
   background: url(pager_blur.png);
 }
 
-#edgecase_link {
+#newcontext_link {
   top: 96px;
   left: 50px;
   width: 334px;
   height: 40px;
 }
 
-#other_edgecase_link {
+#other_newcontext_link {
   display: none;
 }
 
@@ -211,7 +211,7 @@ html, body {
   text-indent: -999em;
 }
 
-#edgecase_link {
+#newcontext_link {
   position: absolute;
   top: 185px;
   left: 5px;
@@ -392,9 +392,9 @@ html, body {
   color: #999;
 }
 
-/* Index: License and EdgeCase
+/* Index: License and New Context
 ------------------------------------------------------------ */
-#license_and_edgecase {
+#license_and_newcontext {
   float: right;
   width: 485px;
 }
@@ -824,7 +824,7 @@ ol {
     right: 33px;
   }
 
-  #license_and_edgecase {
+  #license_and_newcontext {
     float: none;
     width: auto;
     margin-bottom: 40px;
@@ -862,7 +862,7 @@ ol {
     top: 6px;
   }
 
-  #edgecase_link {
+  #newcontext_link {
     display: none;
   }
 
@@ -883,7 +883,7 @@ ol {
     left: 21px;
   }
 
-  #other_edgecase_link {
+  #other_newcontext_link {
     display: block;
     position: absolute;
     right: 50px;
