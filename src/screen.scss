@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'compass/css3';
 
+
 $gi_green : #86AC3A;
 $gi_gray  : #7C7C7C;
 
@@ -262,7 +263,7 @@ html, body {
     padding         : 3px 16px 5px 16px;
     color           : #fff;
     text-decoration : none;
-    background      : #ED6B44;
+    background      : #6491E0;
     @include border_radius(3px);
   }
 }
@@ -302,10 +303,9 @@ html, body {
 }
 
 #brought_to_you_by {
-  color           : #ED6B44;
+  color           : #6491E0;
   font            : 39px 'DINWeb-CondMedium', helvetica, arial, sans-serif;
   text-decoration : none;
-  text-transform  : uppercase;
 
   img { display: block; }
 }
