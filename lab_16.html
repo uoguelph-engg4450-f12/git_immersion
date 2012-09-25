@@ -73,7 +73,7 @@ git commit -m "Oops, we didn't want this commit"</pre>
 <p>This will pop you into the editor.  You can edit the default commit message or leave it as is.  Save and close the file. You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git revert HEAD --no-edit
-[master b08fa66] Revert "Oops, we didn't want this commit"
+[master 87f7f03] Revert "Oops, we didn't want this commit"
  1 file changed, 1 insertion(+), 1 deletion(-)
 </pre>
 <p>Since we were undoing the very last commit we made, we were able to use <code>HEAD</code> as the argument to revert.  We can revert any arbitrary commit earlier in history by simply specifying its hash value.</p>
@@ -84,12 +84,12 @@ git commit -m "Oops, we didn't want this commit"</pre>
 <pre class="instructions">git hist</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist
-* b08fa66 2012-09-25 | Revert "Oops, we didn't want this commit" (HEAD, master) [Graham Taylor]
-* 0f92242 2012-09-25 | Oops, we didn't want this commit [Graham Taylor]
-* a5af311 2012-09-25 | Added a comment (v1) [Graham Taylor]
-* df293e3 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* c717e9e 2012-09-25 | Using ARGV [Graham Taylor]
-* 36e36ce 2012-09-25 | First Commit [Graham Taylor]</pre>
+* 87f7f03 2012-09-25 | Revert "Oops, we didn't want this commit" (HEAD, master) [Graham Taylor]
+* ce70ea2 2012-09-25 | Oops, we didn't want this commit [Graham Taylor]
+* 235d207 2012-09-25 | Added a comment (v1) [Graham Taylor]
+* 0cd2e5b 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
+* 0fee48a 2012-09-25 | Using ARGV [Graham Taylor]
+* 562febe 2012-09-25 | First Commit [Graham Taylor]</pre>
 <p>This technique will work with any commit (although you may have to resolve conflicts).  It is safe to use even on branches that are publicly shared on remote repositories.</p>
 <h2>Up Next <em>05</em></h2>
 <p>Next, let&#8217;s look at a technique that can be used to remove the most recent commits from the repository history.</p>

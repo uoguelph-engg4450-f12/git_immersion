@@ -62,30 +62,30 @@ git hist</pre>
 <pre class="sample">$ git checkout greet
 Already on 'greet'
 $ git hist
-*   e357e37 2012-09-25 | Merged master fixed conflict. (HEAD, greet) [Graham Taylor]
+*   52ba6f7 2012-09-25 | Merged master fixed conflict. (HEAD, greet) [Graham Taylor]
 |\  
-| * 08e440a 2012-09-25 | Made interactive (master) [Graham Taylor]
-* |   b739ac1 2012-09-25 | Merge branch 'master' into greet [Graham Taylor]
+| * 1ea6c42 2012-09-25 | Made interactive (master) [Graham Taylor]
+* |   0a445d8 2012-09-25 | Merge branch 'master' into greet [Graham Taylor]
 |\ \  
 | |/  
-| * d4f08b2 2012-09-25 | Added README [Graham Taylor]
-* | 42f9be8 2012-09-25 | Updated Rakefile [Graham Taylor]
-* | 6e75681 2012-09-25 | Hello uses Greeter [Graham Taylor]
-* | c91e1bf 2012-09-25 | Added greeter class [Graham Taylor]
+| * 5eb6bac 2012-09-25 | Added README [Graham Taylor]
+* | 6dfae2c 2012-09-25 | Updated Rakefile [Graham Taylor]
+* | b052963 2012-09-25 | Hello uses Greeter [Graham Taylor]
+* | 83f4089 2012-09-25 | Added greeter class [Graham Taylor]
 |/  
-* 3ae144f 2012-09-25 | Added a Rakefile. [Graham Taylor]
-* a3abeb1 2012-09-25 | Moved hello.rb to lib [Graham Taylor]
-* 6f7b25b 2012-09-25 | Add an author/email comment [Graham Taylor]
-* a5af311 2012-09-25 | Added a comment (v1) [Graham Taylor]
-* df293e3 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* c717e9e 2012-09-25 | Using ARGV [Graham Taylor]
-* 36e36ce 2012-09-25 | First Commit [Graham Taylor]</pre>
+* f5752af 2012-09-25 | Added a Rakefile. [Graham Taylor]
+* fab122d 2012-09-25 | Moved hello.rb to lib [Graham Taylor]
+* 475612a 2012-09-25 | Add an author/email comment [Graham Taylor]
+* 235d207 2012-09-25 | Added a comment (v1) [Graham Taylor]
+* 0cd2e5b 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
+* 0fee48a 2012-09-25 | Using ARGV [Graham Taylor]
+* 562febe 2012-09-25 | First Commit [Graham Taylor]</pre>
 <p>That&#8217;s a bit hard to read, but looking at the data we see that the &#8220;Updated Rakefile&#8221; commit was the last commit on the greet branch before merging.  Let&#8217;s reset the greet branch to that commit.</p>
 <h4>Execute:</h4>
 <pre class="instructions">git reset --hard &lt;hash&gt;</pre>
 <h4>Output:</h4>
-<pre class="sample">$ git reset --hard 42f9be8
-HEAD is now at 42f9be8 Updated Rakefile
+<pre class="sample">$ git reset --hard 6dfae2c
+HEAD is now at 6dfae2c Updated Rakefile
 </pre>
 <h2>Check the branch. <em>02</em></h2>
 <p>Look at the log for the greet branch.  We no longer have the merge commits in its history.</p>
@@ -93,19 +93,19 @@ HEAD is now at 42f9be8 Updated Rakefile
 <pre class="instructions">git hist --all</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --all
-* 08e440a 2012-09-25 | Made interactive (master) [Graham Taylor]
-* d4f08b2 2012-09-25 | Added README [Graham Taylor]
-| * 42f9be8 2012-09-25 | Updated Rakefile (HEAD, greet) [Graham Taylor]
-| * 6e75681 2012-09-25 | Hello uses Greeter [Graham Taylor]
-| * c91e1bf 2012-09-25 | Added greeter class [Graham Taylor]
+* 6dfae2c 2012-09-25 | Updated Rakefile (HEAD, greet) [Graham Taylor]
+* b052963 2012-09-25 | Hello uses Greeter [Graham Taylor]
+* 83f4089 2012-09-25 | Added greeter class [Graham Taylor]
+| * 1ea6c42 2012-09-25 | Made interactive (master) [Graham Taylor]
+| * 5eb6bac 2012-09-25 | Added README [Graham Taylor]
 |/  
-* 3ae144f 2012-09-25 | Added a Rakefile. [Graham Taylor]
-* a3abeb1 2012-09-25 | Moved hello.rb to lib [Graham Taylor]
-* 6f7b25b 2012-09-25 | Add an author/email comment [Graham Taylor]
-* a5af311 2012-09-25 | Added a comment (v1) [Graham Taylor]
-* df293e3 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* c717e9e 2012-09-25 | Using ARGV [Graham Taylor]
-* 36e36ce 2012-09-25 | First Commit [Graham Taylor]</pre>
+* f5752af 2012-09-25 | Added a Rakefile. [Graham Taylor]
+* fab122d 2012-09-25 | Moved hello.rb to lib [Graham Taylor]
+* 475612a 2012-09-25 | Add an author/email comment [Graham Taylor]
+* 235d207 2012-09-25 | Added a comment (v1) [Graham Taylor]
+* 0cd2e5b 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
+* 0fee48a 2012-09-25 | Using ARGV [Graham Taylor]
+* 562febe 2012-09-25 | First Commit [Graham Taylor]</pre>
   </div>
 
   <div id="index">
