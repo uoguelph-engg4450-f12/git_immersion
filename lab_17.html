@@ -68,12 +68,12 @@
 <pre class="instructions">git hist</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist
-* 87f7f03 2012-09-25 | Revert "Oops, we didn't want this commit" (HEAD, master) [Graham Taylor]
-* ce70ea2 2012-09-25 | Oops, we didn't want this commit [Graham Taylor]
-* 235d207 2012-09-25 | Added a comment (v1) [Graham Taylor]
-* 0cd2e5b 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* 0fee48a 2012-09-25 | Using ARGV [Graham Taylor]
-* 562febe 2012-09-25 | First Commit [Graham Taylor]</pre>
+* 4e63ab6 2012-09-25 | Revert "Oops, we didn't want this commit" (HEAD, master) [Graham Taylor]
+* c6ba2e3 2012-09-25 | Oops, we didn't want this commit [Graham Taylor]
+* 386d61e 2012-09-25 | Added a comment (v1) [Graham Taylor]
+* aa5d2a9 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
+* 7383195 2012-09-25 | Using ARGV [Graham Taylor]
+* b746ec5 2012-09-25 | First Commit [Graham Taylor]</pre>
 <p>We see that we have an &#8220;Oops&#8221; commit and a &#8220;Revert Oops&#8221; commit as the last two commits made in this branch.  Let&#8217;s remove them using reset.</p>
 <h2>First, Mark this Branch <em>03</em></h2>
 <p>But before we remove the commits, let&#8217;s mark the latest commit with a tag so we can find it again.</p>
@@ -86,12 +86,12 @@
 git hist</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git reset --hard v1
-HEAD is now at 235d207 Added a comment
+HEAD is now at 386d61e Added a comment
 $ git hist
-* 235d207 2012-09-25 | Added a comment (HEAD, v1, master) [Graham Taylor]
-* 0cd2e5b 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* 0fee48a 2012-09-25 | Using ARGV [Graham Taylor]
-* 562febe 2012-09-25 | First Commit [Graham Taylor]</pre>
+* 386d61e 2012-09-25 | Added a comment (HEAD, v1, master) [Graham Taylor]
+* aa5d2a9 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
+* 7383195 2012-09-25 | Using ARGV [Graham Taylor]
+* b746ec5 2012-09-25 | First Commit [Graham Taylor]</pre>
 <p>Our master branch now points to the v1 commit and the Oops commit and the Revert Oops commit are no longer in the branch.  The <code>--hard</code> parameter indicates that the working directory should be updated to be consistent with the new branch head.</p>
 <h2>Nothing is Ever Lost <em>05</em></h2>
 <p>But what happened to the bad commits?  It turns out that the commits are still in the repository.  In fact, we can still reference them.  Remember that at the beginning of this lab we tagged the reverting commit with the tag &#8220;oops&#8221;.  Let&#8217;s look at <em>all</em> the commits.</p>
@@ -99,12 +99,12 @@ $ git hist
 <pre class="instructions">git hist --all</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --all
-* 87f7f03 2012-09-25 | Revert "Oops, we didn't want this commit" (oops) [Graham Taylor]
-* ce70ea2 2012-09-25 | Oops, we didn't want this commit [Graham Taylor]
-* 235d207 2012-09-25 | Added a comment (HEAD, v1, master) [Graham Taylor]
-* 0cd2e5b 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* 0fee48a 2012-09-25 | Using ARGV [Graham Taylor]
-* 562febe 2012-09-25 | First Commit [Graham Taylor]</pre>
+* 4e63ab6 2012-09-25 | Revert "Oops, we didn't want this commit" (oops) [Graham Taylor]
+* c6ba2e3 2012-09-25 | Oops, we didn't want this commit [Graham Taylor]
+* 386d61e 2012-09-25 | Added a comment (HEAD, v1, master) [Graham Taylor]
+* aa5d2a9 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
+* 7383195 2012-09-25 | Using ARGV [Graham Taylor]
+* b746ec5 2012-09-25 | First Commit [Graham Taylor]</pre>
 <p>Here we see that the bad commits haven&#8217;t disappeared.  They are still in the repository.  It&#8217;s just that they are no longer listed in the master branch.  If we hadn&#8217;t tagged them, they would still be in the repository, but there would be no way to reference them other than using their hash names.  Commits that are unreferenced remain in the repository until the system runs the garbage collection software.</p>
 <h2>Dangers of Reset <em>06</em></h2>
 <p>Resets on local branches are generally safe.  Any &#8220;accidents&#8221; can usually be recovered from by just resetting again with the desired commit.</p>
