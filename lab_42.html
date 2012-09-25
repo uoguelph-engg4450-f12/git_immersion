@@ -59,21 +59,21 @@ git hist --all</pre>
 <p class="note red"><strong><span class="caps">NOTE</span>: Now in the _cloned_hello_ repo</strong></p>
 <h4>Output:</h4>
 <pre class="sample">$ git fetch
-From /Users/gwtaylor/Documents/Teaching/ENGG4450/Labs/Lab2/git_immersion/auto/hello
-   62b45f6..3a51835  master     -&gt; origin/master
+From /private/tmp/git_immersion/auto/hello
+   98fa6a7..a62d029  master     -&gt; origin/master
 $ git hist --all
-* 3a51835 2012-09-25 | Changed README in original repo (origin/master, origin/HEAD) [Graham Taylor]
-* 62b45f6 2012-09-25 | Updated Rakefile (HEAD, origin/greet, master) [Graham Taylor]
-* 7adc62e 2012-09-25 | Hello uses Greeter [Graham Taylor]
-* 20ea71a 2012-09-25 | Added greeter class [Graham Taylor]
-* 6390300 2012-09-25 | Added README [Graham Taylor]
-* b060a26 2012-09-25 | Added a Rakefile. [Graham Taylor]
-* aad5961 2012-09-25 | Moved hello.rb to lib [Graham Taylor]
-* 3b411c4 2012-09-25 | Add an author/email comment [Graham Taylor]
-* 7cceba6 2012-09-25 | Added a comment (v1) [Graham Taylor]
-* ae1bda1 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* d2f06a2 2012-09-25 | Using ARGV [Graham Taylor]
-* 90f5d78 2012-09-25 | First Commit [Graham Taylor]</pre>
+* a62d029 2012-09-25 | Changed README in original repo (origin/master, origin/HEAD) [Graham Taylor]
+* 98fa6a7 2012-09-25 | Updated Rakefile (HEAD, origin/greet, master) [Graham Taylor]
+* 4a99394 2012-09-25 | Hello uses Greeter [Graham Taylor]
+* ad7b38e 2012-09-25 | Added greeter class [Graham Taylor]
+* d4f08b2 2012-09-25 | Added README [Graham Taylor]
+* 3ae144f 2012-09-25 | Added a Rakefile. [Graham Taylor]
+* a3abeb1 2012-09-25 | Moved hello.rb to lib [Graham Taylor]
+* 6f7b25b 2012-09-25 | Add an author/email comment [Graham Taylor]
+* a5af311 2012-09-25 | Added a comment (v1) [Graham Taylor]
+* df293e3 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
+* c717e9e 2012-09-25 | Using ARGV [Graham Taylor]
+* 36e36ce 2012-09-25 | First Commit [Graham Taylor]</pre>
 <p>At this point the repository has all the commits from the original repository, but they are not integrated into the the cloned repository&#8217;s local branches.</p>
 <p>Find the &#8220;Changed <span class="caps">README</span> in original repo&#8221; commit in the history above.  Notice that the commit includes &#8220;origin/master&#8221; and &#8220;origin/<span class="caps">HEAD</span>&#8221;.</p>
 <p>Now look at the &#8220;Updated Rakefile&#8221; commit.  You will see that it the local master branch points to this commit, not to the new commit that we just fetched.</p>
