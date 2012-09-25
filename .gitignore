@@ -1,0 +1,6 @@
+.DS_Store
+auto
+dist
+git_tutorial
+samples
+.sass-cache/*
