@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lab 29 - Git Immersion - Brought to you by EdgeCase</title>
+  <title>Lab 54 - Git Immersion - Brought to you by EdgeCase</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" media="screen" href="screen.css">
@@ -23,7 +23,7 @@
   <script type="text/javascript" src="UI.js"></script>
 </head>
 
-<body data-lab-id="29">
+<body data-lab-id="54">
   <div id="image_preloader">
     <img src="green_circle_blur.png">
     <img src="label_blur.png">
@@ -34,61 +34,20 @@
   <header id="header">
     <a href="index.html" id="home_link">Git Immersion</a>
     <nav id="pager">
-      <a id="arrow_next" class="arrow" href="lab_30.html">Next</a>
+      <span id="arrow_next" class="arrow">Next</span>
   
-      <a id="arrow_previous" class="arrow" href="lab_28.html">Previous</a>
+      <a id="arrow_previous" class="arrow" href="lab_53.html">Previous</a>
   
   <a id="table_of_contents_link" href="#">Table of Contents</a>
   <a id="bookmark_link"><span id="bookmark"></span>Bookmark this lab</a>
   <a id="edgecase_link" href="http://edgecase.com" target="_blank">EdgeCase</a>
 </nav>
-    <h1 class="lab_title"><em>lab 29</em> Creating a Conflict</h1>
+    <h1 class="lab_title"><em>lab 54</em> Another lab</h1>
     <a href="http://edgecase.com" target=_blank" id="other_edgecase_link">EdgeCase</a>
   </header>
 
   <div id="main_content">
-    <h1 class="lab_title"><em>lab 29</em>  Creating a Conflict</h1>
-<h3>Goals</h3>
-<ul>
-	<li>Create a conflicting change in the master branch.</li>
-</ul>
-<h2>Switch back to master and create a conflict <em>01</em></h2>
-<p>Switch back to the master branch and make this change:</p>
-<h4>Execute:</h4>
-<pre class="instructions">git checkout master</pre>
-<h4>File: <em>lib/hello.rb</em></h4>
-<pre class="file">puts "What's your name"
-my_name = gets.strip
-
-puts "Hello, #{my_name}!"
-</pre>
-<h4>Execute:</h4>
-<pre class="instructions">git add lib/hello.rb
-git commit -m "Made interactive"</pre>
-<h2>View the Branches <em>02</em></h2>
-<h4>Execute:</h4>
-<pre class="instructions">git hist --all</pre>
-<h4>Output:</h4>
-<pre class="sample">$ git hist --all
-*   8026da4 2012-09-25 | Merge branch 'master' into greet (greet) [Graham Taylor]
-|\  
-* | 73c9545 2012-09-25 | Updated Rakefile [Graham Taylor]
-* | 1e8012a 2012-09-25 | Hello uses Greeter [Graham Taylor]
-* | 028c52d 2012-09-25 | Added greeter class [Graham Taylor]
-| | * 2b2e7eb 2012-09-25 | Made interactive (HEAD, master) [Graham Taylor]
-| |/  
-| * 6390300 2012-09-25 | Added README [Graham Taylor]
-|/  
-* b060a26 2012-09-25 | Added a Rakefile. [Graham Taylor]
-* aad5961 2012-09-25 | Moved hello.rb to lib [Graham Taylor]
-* 3b411c4 2012-09-25 | Add an author/email comment [Graham Taylor]
-* 7cceba6 2012-09-25 | Added a comment (v1) [Graham Taylor]
-* ae1bda1 2012-09-25 | Added a default value (v1-beta) [Graham Taylor]
-* d2f06a2 2012-09-25 | Using ARGV [Graham Taylor]
-* 90f5d78 2012-09-25 | First Commit [Graham Taylor]</pre>
-<p>Master at commit &#8220;Added <span class="caps">README</span>&#8221; has been merged to the greet branch, but there is now an additional commit on master that has not been merged back to greet.</p>
-<h2>Up Next <em>03</em></h2>
-<p>The latest change in master conflicts with some existing changes in greet.  Next we will resolve those changes.</p>
+    <h1 class="lab_title"><em>lab 54</em>  Another lab</h1>
   </div>
 
   <div id="index">
@@ -150,6 +109,7 @@ git commit -m "Made interactive"</pre>
           <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Pulling others' changes</a></li>
           <li id="lab_52_link" data-lab-id="52"><a href="lab_52.html"><span>52:</span> Advanced / Future Topics</a></li>
           <li id="lab_53_link" data-lab-id="53"><a href="lab_53.html"><span>53:</span> Thank You</a></li>
+          <li id="lab_54_link" data-lab-id="54"><a href="lab_54.html"><span>54:</span> Another lab</a></li>
       </ul>
 </div>
 

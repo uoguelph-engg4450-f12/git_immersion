@@ -62,7 +62,8 @@
 	<li><span class="caps">VISUAL</span> environment variable</li>
 	<li><span class="caps">EDITOR</span> environment variable</li>
 </ul>
-<p>I have the <span class="caps">EDITOR</span> variable set to <code>emacsclient</code>.</p>
+<p>In the <span class="caps">UNIX</span> lab, your <code>~/.bashrc</code> references <code>/export/scripts/bashrc</code> and this sets <code>EDITOR=/usr/bin/vim</code> and <code>VISUAL=/usr/bin/vim</code>.</p>
+<p>I have the <span class="caps">EDITOR</span> variable set to <code>emacs</code> because I am an emacs user. However, if you prefer a graphical editor, I would add <code>export GIT_EDITOR=gedit</code> to a new file in your home directory called <code>~/.bash.local</code>. This will pop up gedit to take your commit message when you do not include the <code>-m</code> flag in your commit.</p>
 <p>So commit now and check the status.</p>
 <h4>Execute:</h4>
 <pre class="instructions">git commit</pre>
@@ -154,8 +155,8 @@ nothing to commit (working directory clean)
           <li id="lab_47_link" data-lab-id="47"><a href="lab_47.html"><span>47:</span> Adding a Remote Repository</a></li>
           <li id="lab_48_link" data-lab-id="48"><a href="lab_48.html"><span>48:</span> Pushing a Change</a></li>
           <li id="lab_49_link" data-lab-id="49"><a href="lab_49.html"><span>49:</span> Pulling Shared Changes</a></li>
-          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Hosting your Git Repositories</a></li>
-          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Sharing Repos</a></li>
+          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Cloning a Github repository</a></li>
+          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Pulling others' changes</a></li>
           <li id="lab_52_link" data-lab-id="52"><a href="lab_52.html"><span>52:</span> Advanced / Future Topics</a></li>
           <li id="lab_53_link" data-lab-id="53"><a href="lab_53.html"><span>53:</span> Thank You</a></li>
       </ul>

@@ -68,17 +68,17 @@ ORIG_HEAD	hooks		logs
 <pre class="instructions">ls -C .git/objects</pre>
 <h4>Output:</h4>
 <pre class="sample">$ ls -C .git/objects
-06	17	27	38	59	6b	81	9c	c0	pack
-0f	24	28	43	68	76	96	af	c6
-11	26	33	4c	69	78	97	bd	info
+0f	26	38	4c	68	78	97	ae	bd	fd
+11	27	3b	59	69	7c	9c	af	d2	info
+24	28	43	61	6b	90	aa	b0	d7	pack
 </pre>
 <p>You should see a bunch of directories with 2 letter names.  The directory names are the first two letters of the sha1 hash of the object stored in git.</p>
 <h2>Deeper into the Object Store <em>03</em></h2>
 <h4>Execute:</h4>
 <pre class="instructions">ls -C .git/objects/&lt;dir&gt;</pre>
 <h4>Output:</h4>
-<pre class="sample">$ ls -C .git/objects/06
-66dc6cf70a3e34f602986c270b1c7352bce769
+<pre class="sample">$ ls -C .git/objects/0f
+d1c04019d9286af4127b70ca5bc45064cb6bdc
 </pre>
 <p>Look in one of the two-letter directories.  You should see some files with 38-character names.  These are the files that contain the objects stored in git.  These files are compressed and encoded, so looking at their contents directly won&#8217;t be very helpful, but we will take a closer look in a bit.</p>
 <h2>Config File <em>04</em></h2>
@@ -113,7 +113,7 @@ $ ls .git/refs/tags
 v1
 v1-beta
 $ cat .git/refs/tags/v1
-17c56e51c3534e64abdda9964e5437e84cff4805
+7cceba69d1d91686dc7e3622775d41c2c8762d7a
 </pre>
 <p>You should recognize the files in the tags subdirectory.  Each file corresponds to a tag you created with the <code>git tag</code> command earlier. Its content is just the hash of the commit tied to the tag.</p>
 <p>The heads directory is similar, but is used for branches rather than tags.  We only have one branch at the moment, so all you will see is master in this directory.</p>
@@ -182,8 +182,8 @@ ref: refs/heads/master
           <li id="lab_47_link" data-lab-id="47"><a href="lab_47.html"><span>47:</span> Adding a Remote Repository</a></li>
           <li id="lab_48_link" data-lab-id="48"><a href="lab_48.html"><span>48:</span> Pushing a Change</a></li>
           <li id="lab_49_link" data-lab-id="49"><a href="lab_49.html"><span>49:</span> Pulling Shared Changes</a></li>
-          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Hosting your Git Repositories</a></li>
-          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Sharing Repos</a></li>
+          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Cloning a Github repository</a></li>
+          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Pulling others' changes</a></li>
           <li id="lab_52_link" data-lab-id="52"><a href="lab_52.html"><span>52:</span> Advanced / Future Topics</a></li>
           <li id="lab_53_link" data-lab-id="53"><a href="lab_53.html"><span>53:</span> Thank You</a></li>
       </ul>

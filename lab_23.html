@@ -60,7 +60,7 @@
 <p>This should show the latest commit made in the repository.  The SHA1 hash on your system is probably different that what is on mine, but you should see something like this.</p>
 <h4>Output:</h4>
 <pre class="sample">$ git hist --max-count=1
-* c00ce41 2012-09-25 | Added a Rakefile. (HEAD, master) [Graham Taylor]</pre>
+* b060a26 2012-09-25 | Added a Rakefile. (HEAD, master) [Graham Taylor]</pre>
 <h2>Dumping the Latest Commit <em>02</em></h2>
 <p>Using the SHA1 hash from the commit listed above &#8230;</p>
 <h4>Execute:</h4>
@@ -68,13 +68,13 @@
 git cat-file -p &lt;hash&gt;</pre>
 <p>Here&#8217;s my output &#8230;</p>
 <h4>Output:</h4>
-<pre class="sample">$ git cat-file -t c00ce41
+<pre class="sample">$ git cat-file -t b060a26
 commit
-$ git cat-file -p c00ce41
+$ git cat-file -p b060a26
 tree bdae880ee99af38c88bfaac6260517e8e7c40ee2
-parent 338c54b3f484c3c0768c0b233f1f810e889d363a
-author Graham Taylor &lt;gwtaylor (at) gmail.com&gt; 1348584802 -0400
-committer Graham Taylor &lt;gwtaylor (at) gmail.com&gt; 1348584802 -0400
+parent aad59612e0dbba364d8f123f8b2c40acd7ab2ea9
+author Graham Taylor &lt;gwtaylor (at) gmail.com&gt; 1348616780 -0400
+committer Graham Taylor &lt;gwtaylor (at) gmail.com&gt; 1348616780 -0400
 
 Added a Rakefile.
 </pre>
@@ -170,8 +170,8 @@ puts "Hello, #{name}!"
           <li id="lab_47_link" data-lab-id="47"><a href="lab_47.html"><span>47:</span> Adding a Remote Repository</a></li>
           <li id="lab_48_link" data-lab-id="48"><a href="lab_48.html"><span>48:</span> Pushing a Change</a></li>
           <li id="lab_49_link" data-lab-id="49"><a href="lab_49.html"><span>49:</span> Pulling Shared Changes</a></li>
-          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Hosting your Git Repositories</a></li>
-          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Sharing Repos</a></li>
+          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Cloning a Github repository</a></li>
+          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Pulling others' changes</a></li>
           <li id="lab_52_link" data-lab-id="52"><a href="lab_52.html"><span>52:</span> Advanced / Future Topics</a></li>
           <li id="lab_53_link" data-lab-id="53"><a href="lab_53.html"><span>53:</span> Thank You</a></li>
       </ul>

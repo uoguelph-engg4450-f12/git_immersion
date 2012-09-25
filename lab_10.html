@@ -58,27 +58,27 @@
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log
-commit 17c56e51c3534e64abdda9964e5437e84cff4805
+commit 7cceba69d1d91686dc7e3622775d41c2c8762d7a
 Author: Graham Taylor &lt;gwtaylor (at) gmail.com&gt;
-Date:   Tue Sep 25 10:53:21 2012 -0400
+Date:   Tue Sep 25 19:46:20 2012 -0400
 
     Added a comment
 
-commit 0666dc6cf70a3e34f602986c270b1c7352bce769
+commit ae1bda151663a725472060e9d6569ee22829287c
 Author: Graham Taylor &lt;gwtaylor (at) gmail.com&gt;
-Date:   Tue Sep 25 10:53:21 2012 -0400
+Date:   Tue Sep 25 19:46:20 2012 -0400
 
     Added a default value
 
-commit 2403ed0430c3d77eaf85777892317b3eac790308
+commit d2f06a25405855a83a96a276bab6630f8652005d
 Author: Graham Taylor &lt;gwtaylor (at) gmail.com&gt;
-Date:   Tue Sep 25 10:53:21 2012 -0400
+Date:   Tue Sep 25 19:46:19 2012 -0400
 
     Using ARGV
 
-commit c64683b24fdf5312d5e705642b92391721b9474e
+commit 90f5d78260423ee059064a88d09c8ca39c8d534e
 Author: Graham Taylor &lt;gwtaylor (at) gmail.com&gt;
-Date:   Tue Sep 25 10:53:21 2012 -0400
+Date:   Tue Sep 25 19:46:19 2012 -0400
 
     First Commit
 </pre>
@@ -90,10 +90,10 @@ Date:   Tue Sep 25 10:53:21 2012 -0400
 <p>You should see &#8230;</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=oneline
-17c56e51c3534e64abdda9964e5437e84cff4805 Added a comment
-0666dc6cf70a3e34f602986c270b1c7352bce769 Added a default value
-2403ed0430c3d77eaf85777892317b3eac790308 Using ARGV
-c64683b24fdf5312d5e705642b92391721b9474e First Commit
+7cceba69d1d91686dc7e3622775d41c2c8762d7a Added a comment
+ae1bda151663a725472060e9d6569ee22829287c Added a default value
+d2f06a25405855a83a96a276bab6630f8652005d Using ARGV
+90f5d78260423ee059064a88d09c8ca39c8d534e First Commit
 </pre>
 <h2>Controlling Which Entries are Displayed <em>02</em></h2>
 <p>There are a lot of options for selecting which entries are displayed in the log.  Play around with the following options:</p>
@@ -113,10 +113,10 @@ git log --pretty=oneline --all</pre>
 <p>It looks like this:</p>
 <h4>Output:</h4>
 <pre class="sample">$ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-* 17c56e5 2012-09-25 | Added a comment (HEAD, master) [Graham Taylor]
-* 0666dc6 2012-09-25 | Added a default value [Graham Taylor]
-* 2403ed0 2012-09-25 | Using ARGV [Graham Taylor]
-* c64683b 2012-09-25 | First Commit [Graham Taylor]</pre>
+* 7cceba6 2012-09-25 | Added a comment (HEAD, master) [Graham Taylor]
+* ae1bda1 2012-09-25 | Added a default value [Graham Taylor]
+* d2f06a2 2012-09-25 | Using ARGV [Graham Taylor]
+* 90f5d78 2012-09-25 | First Commit [Graham Taylor]</pre>
 <p>Let&#8217;s look at it in detail:</p>
 <ul>
 	<li><code>--pretty="..."</code> defines the format of the output.</li>
@@ -130,7 +130,7 @@ git log --pretty=oneline --all</pre>
 </ul>
 <p>This is a lot to type every time you want to see the log. Fortunately we will learn about git aliases in the next lab.</p>
 <h2>Other Tools <em>05</em></h2>
-<p>Both <code>gitx</code> (for Macs) and <code>gitk</code> (any platform) are useful in exploring log history.</p>
+<p>Both <code>gitx</code> (for Macs) and <code>gitk</code> (any platform) are useful in exploring log history. I really like <code>tig</code> which is a lightweight command-line git browser (tig is installed in the lab).</p>
   </div>
 
   <div id="index">
@@ -188,8 +188,8 @@ git log --pretty=oneline --all</pre>
           <li id="lab_47_link" data-lab-id="47"><a href="lab_47.html"><span>47:</span> Adding a Remote Repository</a></li>
           <li id="lab_48_link" data-lab-id="48"><a href="lab_48.html"><span>48:</span> Pushing a Change</a></li>
           <li id="lab_49_link" data-lab-id="49"><a href="lab_49.html"><span>49:</span> Pulling Shared Changes</a></li>
-          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Hosting your Git Repositories</a></li>
-          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Sharing Repos</a></li>
+          <li id="lab_50_link" data-lab-id="50"><a href="lab_50.html"><span>50:</span> Cloning a Github repository</a></li>
+          <li id="lab_51_link" data-lab-id="51"><a href="lab_51.html"><span>51:</span> Pulling others' changes</a></li>
           <li id="lab_52_link" data-lab-id="52"><a href="lab_52.html"><span>52:</span> Advanced / Future Topics</a></li>
           <li id="lab_53_link" data-lab-id="53"><a href="lab_53.html"><span>53:</span> Thank You</a></li>
       </ul>
