@@ -65,6 +65,9 @@
   type = cat-file -t
   dump = cat-file -p
 </pre>
+<p class="note"><strong>Note:</strong> to edit <code>.gitconfig</code> you can do the following.</p>
+<h4>Execute:</h4>
+<pre class="instructions">gedit ~/.gitconfig</pre>
 <p>We&#8217;ve covered the commit and status commands already.  And we just covered the <code>log</code> command in the previous lab. The <code>checkout</code> command will be coming up soon.</p>
 <p>With these aliases defined in the <code>.gitconfig</code> file you can type <code>git co</code> wherever you used to have to type <code>git checkout</code>.  Likewise with <code>git st</code> for <code>git status</code> and <code>git ci</code> for <code>git commit</code>.  And best of all, <code>git hist</code> will allow you to avoid the really long <code>log</code> command.</p>
 <p>Go ahead and give the new commands a try.</p>
@@ -88,6 +91,12 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 </pre>
+<p class="note"><strong>Note:</strong> to edit <code>.bashrc.local</code> you can do the following.</p>
+<h4>Execute:</h4>
+<pre class="instructions">gedit ~/.bashrc.local</pre>
+<p>The change will take effect next time you start the terminal. But you want it to take effect right away, so you can &#8220;source&#8221; the file.</p>
+<h4>Execute:</h4>
+<pre class="instructions">source ~/.bashrc.local</pre>
 <p>The <code>go</code> abbreviation for <code>git checkout</code> is particularly nice.  It allows me to type:</p>
 <pre class="instructions">go &lt;branch&gt;</pre>
 <p>to checkout a particular branch.</p>

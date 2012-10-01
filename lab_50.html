@@ -59,8 +59,9 @@
 access from the <span class="caps">UNIX</span> lab.</p>
 <p>If you have not done so already, follow <a
 href="https://help.github.com/articles/generating-ssh-keys#platform-linux">these<br />
-instructions</a> to set up authentication. Test ssh authentication and make<br />
-sure it&#8217;s working.</p>
+instructions</a> to set up authentication.</p>
+<p class="note"><strong>Note:</strong> In step 4, the instructions recommend installing xclip to copy your public key the clipboard. You won&#8217;t have permissions to install xclip. After creating your public key, just open it up in <code>gedit</code> and copy it to the clipboard with <code>ctrl-c</code>, being careful not to add any newlines or whitespace.</p>
+<p>Once you&#8217;ve copied your key to Github, test ssh authentication and make sure it&#8217;s working.</p>
 <h4>Execute:</h4>
 <pre class="instructions">ssh -T git@github.com</pre>
 <h4>Output:</h4>

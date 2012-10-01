@@ -103,14 +103,10 @@ git commit -m "Merged master fixed conflict."</pre>
 <h4>Output:</h4>
 <pre class="sample">$ git add lib/hello.rb
 $ git commit -m "Merged master fixed conflict."
-[greet fef7b08] Merged master fixed conflict.
+[greet f5da5b7] Merged master fixed conflict.
 </pre>
 <h2>Advanced Merging <em>04</em></h2>
-<p>git doesn&#8217;t provide any graphical merge tools, but it will gladly work with any third party merge tool you wish to use.  See <a href="http://onestepback.org/index.cgi/Tech/Git/UsingP4MergeWithGit.red">http://onestepback.org/index.cgi/Tech/Git/UsingP4MergeWithGit.red</a> for a description of using the Perforce merge tool with git.</p>
-<p>On my Mac, I like working with <code>opendiff</code> which comes with Xcode. You can configure this automatically. If you have a Mac,</p>
-<h4>Execute:</h4>
-<pre class="instructions">git config --global diff.tool opendiff
-git config --global difftool.prompt false</pre>
+<p>git doesn&#8217;t provide any graphical merge tools, but it will gladly work with any third party merge tool you wish to use.  See <a href="http://twobitlabs.com/2011/08/install-diffmerge-git-mac-os-x/">http://twobitlabs.com/2011/08/install-diffmerge-git-mac-os-x/</a> for a description of using the DiffMerge merge tool with git (it works on Linux, <span class="caps">OSX</span>, and Windows). No need to do this right now &#8211; but the option is there if you are curious!</p>
   </div>
 
   <div id="index">

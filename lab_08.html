@@ -63,7 +63,10 @@
 	<li><span class="caps">EDITOR</span> environment variable</li>
 </ul>
 <p>In the <span class="caps">UNIX</span> lab, your <code>~/.bashrc</code> references <code>/export/scripts/bashrc</code> and this sets <code>EDITOR=/usr/bin/vim</code> and <code>VISUAL=/usr/bin/vim</code>.</p>
-<p>I have the <span class="caps">EDITOR</span> variable set to <code>emacs</code> because I am an emacs user. However, if you prefer a graphical editor, I would add <code>export GIT_EDITOR=gedit</code> to a new file in your home directory called <code>~/.bash.local</code>. This will pop up gedit to take your commit message when you do not include the <code>-m</code> flag in your commit.</p>
+<p>I have the <span class="caps">EDITOR</span> variable set to <code>emacs</code> because I am an emacs user. For the purposes of this lab, let&#8217;s just use <code>gedit</code> by setting the <code>GIT_EDITOR</code> environment variable. This will pop up gedit to take your commit message when you do not include the <code>-m</code> flag in your commit.</p>
+<h4>Execute:</h4>
+<pre class="instructions">export GIT_EDITOR=gedit</pre>
+<p>If you prefer another editor, feel free to change the above command.</p>
 <p>So commit now and check the status.</p>
 <h4>Execute:</h4>
 <pre class="instructions">git commit</pre>
